@@ -1,0 +1,78 @@
+# OlshopVarrel - Aplikasi Toko Online Sederhana
+
+Aplikasi Android berbasis **Java** yang menampilkan produk fashion dan aksesoris, dilengkapi fitur **keranjang belanja**.
+
+---
+
+## ✨ Fitur
+
+- Menampilkan daftar produk fashion (baju, sepatu, tas, dll).
+- Detail produk lengkap: nama, kategori, harga, deskripsi, gambar.
+- Tambah produk ke keranjang belanja.
+- Lihat daftar produk yang sudah dimasukkan ke keranjang.
+- Navigasi sederhana dan responsif.
+
+---
+
+## 🛠️ Teknologi
+
+- **Java** (Native Android)
+- **RecyclerView** untuk list produk
+- **Intent** untuk berpindah halaman
+- **Singleton Pattern** untuk manajemen keranjang
+- **Material Design** untuk tampilan layout
+
+---
+
+## 📦 Struktur Project
+
+
+
+---
+
+## 📷 Preview Aplikasi
+
+| Home Screen | Detail Produk | Keranjang Belanja |
+| :---: | :---: | :---: |
+| ![Home](screenshots/home.png) | ![Detail](screenshots/detail.png) | ![Cart](screenshots/cart.png) |
+
+*(Gambar bisa diganti sesuai screenshot aplikasi kamu)*
+
+---
+
+## 🚀 Cara Menjalankan
+
+1. Clone repository ini:
+
+    ```bash
+    git clone https://github.com/username/olshopvarrel.git
+    ```
+
+2. Buka project di **Android Studio**.
+3. Jalankan di emulator / device Android kamu!
+
+---
+
+## 👤 Author
+
+- Nama : **Varrel**  
+- Project : **Tugas Mata Kuliah Pemrograman Mobile**  
+- Kampus : **Universitas Sumatera Utara (USU)**  
+- Tahun : **2025**
+
+---
+
+## ⚡ Catatan
+
+- Produk yang tampil adalah **dummy data**.
+- Untuk pengembangan lebih lanjut, bisa ditambahkan:
+  - Integrasi database (Firebase / SQLite).
+  - Fitur checkout dan pembayaran.
+  - Filtering produk berdasarkan kategori.
+
+---
+
+
+
+> Dibuat dengan ❤️ untuk memenuhi tugas project akhir.
+
