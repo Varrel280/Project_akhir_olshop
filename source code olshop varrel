@@ -1,0 +1,36 @@
+// File: MainActivity.java
+package com.example.olshop;
+
+import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity {
+    private RecyclerView recyclerView;
+    private ProductAdapter adapter;
+    private List<Product> productList;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        productList = new ArrayList<>();
+        loadProducts();
+
+        adapter = new ProductAdapter(productList);
+        recyclerView.setAdapter(adapter);
+    }
+
+    private void loadProducts() {
+        for (int i = 1; i <= 15; i++) {
+            productList.add(new Product("Produk " + i, "Deskripsi produk ke-" + i, i * 10000));
+        }
+    }
+}
